@@ -1,0 +1,16 @@
+{% extends 'layouts/main.html' %}
+{% block title %} Coja {% endblock %}
+{% block content %}
+
+<div class="row">
+    <div class="col-sm-6">
+        <h1>Coja.io 🗿</h1>
+        <p class="lead"> Find publicly traded company 10-k's.</p>
+        <p class="lead"> Easily.</p>
+        <form method="POST" action="/search" >
+            <input name="search_term" placeholder="search by ticker">
+            <input placeholder="Search by ticker" id="ticker" type="submit">
+        </form>
+    </div>
+</div>
+{% endblock %}

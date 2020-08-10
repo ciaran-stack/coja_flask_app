@@ -1,0 +1,14 @@
+{% extends 'layouts/main.html' %}
+{% block title %} Coja | Company Search{% endblock %}
+{% block content %}
+<h3>Number of search results for "{{ search_term }}": {{ results.count }}</h3>
+<ul class="items">
+	{% for company in results.data %}
+	<li>
+		<a href="/company/{{ company.id }}">
+				<h5>{{ company.name }}</h5>
+		</a>
+	</li>
+	{% endfor %}
+</ul>
+{% endblock %}
