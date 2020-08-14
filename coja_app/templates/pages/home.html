@@ -7,9 +7,16 @@
         <h1>Coja.io 🗿</h1>
         <p class="lead"> Find publicly traded company 10-k's.</p>
         <p class="lead"> Easily.</p>
-        <form method="POST" action="/search" >
-            <input name="search_term" placeholder="search by ticker">
+        <form method="POST" action="/search_ticker" >
+            <input name="search_ticker" placeholder="search by ticker">
             <input placeholder="Search by ticker" id="ticker" type="submit">
+        </form>
+        <div></div>
+        <h5>or</h5>
+        <div></div>
+        <form method="POST" action="/search_company_name" >
+            <input name="search_name" placeholder="search by name">
+            <input placeholder="Search by name" id="name" type="submit">
         </form>
     </div>
 </div>

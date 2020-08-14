@@ -51,6 +51,9 @@ class Company(db.Model):
 # ----------------------------------------------------------------------------#
 # Controllers.
 # ----------------------------------------------------------------------------#
+
+
+
 @app.route('/')
 def home():
 
@@ -58,9 +61,9 @@ def home():
     return render_template('pages/home.html')
 
 
-@app.route('/search', methods=['POST'])
+@app.route('/search_ticker', methods=['POST'])
 def search():
-    """Form on homepage to get passed parameter"""
+    """Form on homepage to get passed parameter of ticker"""
 
     # get object from form
     ticker_object = request.form.get('search_term')
@@ -77,6 +80,27 @@ def search():
     }
 
     return render_template('pages/search_company.html', results=response, search_term=ticker_object)
+
+
+@app.route('/search_company_name', methods=['POST'])
+def search_name():
+    """Form on homepage to get passed parameter of ticker"""
+
+    # get object from form
+    name_object = request.form.get('search_name')
+
+    # query database to get a ticker that matches the search term
+    company_query = Company.query.filter(Company.name.ilike('%' + name_object + '%'))
+    # create a list to iterate over on the results page
+    company_list = list(map(Company.details, company_query))
+
+    # dictionary object to render results on HTML page
+    response = {
+        'count': len(company_list),
+        'data': company_list
+    }
+
+    return render_template('pages/search_company.html', results=response, search_term=name_object)
 
 
 
