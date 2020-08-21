@@ -104,13 +104,6 @@
 
 
 
-<!-- new body html-->
-
-{% extends 'layouts/main.html' %}
-{% block content %}
-
-<!-- body container -->
-
 
 
 
@@ -130,7 +123,6 @@
 <body>
 
 <div class="container">
-
 
 <!-- logo -->
 <div class="logo">
@@ -156,10 +148,9 @@
 
 <!-- end of nav container -->
 </div>
-
-
 </body>
 </html>
+
 
 
 
@@ -193,3 +184,42 @@
     </div>
 </div>
 {% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- html for new homepage with singular search -->
+
+
+<!-- body container -->
+<div class="body-container">
+    <div class="title">
+        <p>Let us find the data.</p>
+     </div>
+    <div class="subtitle">
+        <p>Coja allows you to quickly identify important data points of publicly traded firms. </p>
+    </div>
+    <div class="search">
+        <div class="form-search-container">
+            <form class="form-search" method="POST" action="/search_company_name">
+                <input type="text" name="search_name" placeholder="search by name" >
+                <button id="name" type="submit"><i class=""></i>Find Company</button>
+            </form>
+         </div>
+    </div>
+</div>
+
+<div class="footer">
+        <p>Coja &copy; All Rights Reserved.</p>
+    </div>
