@@ -8,8 +8,8 @@ from forms import TickerSearchForm
 app = Flask(__name__)
 
 # configure DB by putting user name and local DB
-# app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://joeperry@localhost:5432/coja'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://ciaranmahon@localhost:5432/coja'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://joeyp@localhost:5432/coja'
+#app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://ciaranmahon@localhost:5432/coja'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
@@ -52,8 +52,6 @@ class Company(db.Model):
 # Controllers.
 # ----------------------------------------------------------------------------#
 
-
-
 @app.route('/')
 def home():
 
@@ -66,7 +64,7 @@ def search():
     """Form on homepage to get passed parameter of ticker"""
 
     # get object from form
-    ticker_object = request.form.get('search_term')
+    ticker_object = request.form.get('search_ticker')
 
     # query database to get a ticker that matches the search term
     company_query = Company.query.filter(Company.ticker.ilike('%' + ticker_object + '%'))
@@ -101,7 +99,6 @@ def search_name():
     }
 
     return render_template('pages/search_company.html', results=response, search_term=name_object)
-
 
 
 @app.route('/company/<company_id>')

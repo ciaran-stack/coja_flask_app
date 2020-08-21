@@ -80,6 +80,10 @@ p.lead {
   font-size: 1.4rem;
 }
 
+.navbar-logo {
+   color: #FF4431;
+}
+
 .btn-default {
     border: none;
     background-color: #dde2e7;

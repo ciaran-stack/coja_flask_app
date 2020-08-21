@@ -1,0 +1,375 @@
+@charset "utf-8";
+/* CSS Document */
+
+/******************************
+
+[Table of Contents]
+
+1. 1600px
+2. 1440px
+3. 1280px
+4. 1199px
+5. 1024px
+6. 991px
+7. 959px
+8. 880px
+9. 768px
+10. 767px
+11. 539px
+12. 479px
+13. 400px
+
+******************************/
+
+/************
+1. 1600px
+************/
+
+@media only screen and (max-width: 1600px)
+{
+
+}
+
+/************
+2. 1440px
+************/
+
+@media only screen and (max-width: 1440px)
+{
+
+}
+
+/************
+3. 1380px
+************/
+
+@media only screen and (max-width: 1380px){
+
+    .logo {
+        padding-left: 200px;
+
+        }
+
+}
+
+/************
+3. 1280px
+************/
+
+@media only screen and (max-width: 1280px)
+{
+
+    .logo {
+            padding-left: 150px;
+
+            }
+
+
+}
+
+
+/************
+4. 1175px
+************/
+
+@media only screen and (max-width: 1175px)
+{
+
+    .logo {
+            padding-left: 100px;
+
+            }
+
+}
+
+/************
+4. 1100px
+************/
+
+@media only screen and (max-width: 1100px)
+{
+
+    .logo {
+                padding-left: 75px;
+
+                }
+
+
+}
+
+/************
+5. 1024px
+************/
+
+@media only screen and (max-width: 1024px)
+{
+
+    .logo {
+            padding-left: 50px;
+
+            }
+
+}
+
+/************
+6. 991px
+************/
+
+@media only screen and (max-width: 991px)
+{
+
+    .user button {
+    width: 125px;
+    height: 45px;
+
+}
+
+
+}
+
+/************
+7. 959px
+************/
+
+@media only screen and (max-width: 950px)
+{
+
+      ul li{
+      font-size: 20px;
+      padding-left: 10px;
+    }
+
+    nav{
+    float:left;
+    padding-left: 30px;
+    }
+
+
+}
+
+/************
+8. 880px
+************/
+
+@media only screen and (max-width: 880px)
+{
+    .logo {
+            padding-left: 20px;
+      }
+
+    nav{
+    float:left;
+    padding-left: 5px;
+    }
+
+}
+
+/************
+9. 830px
+************/
+
+@media only screen and (max-width: 830px)
+{
+     .logo {
+            padding-left: 5px;
+      }
+
+    nav{
+    float:left;
+    padding-left: none;
+    }
+
+    .user {
+     padding-right: 110px;
+
+    }
+
+
+
+}
+
+/************
+10. 785px
+************/
+
+@media only screen and (max-width: 785px)
+{
+
+     .user {
+     padding-right: 70px;
+
+
+    }
+
+}
+
+
+/************
+11. 725px
+************/
+
+@media only screen and (max-width: 725px)
+{
+     .user {
+     padding-right: 40px;
+     }
+
+    .user button {
+    width: 80px;
+    height: 45px;
+    font-size: 16px;
+    }
+
+}
+
+
+/************
+11. 700px
+************/
+
+@media only screen and (max-width: 700px)
+{
+    .user button {
+    width: 80px;
+    height: 45px;
+    font-size: 16px;
+
+    }
+
+    .subtitle {
+    width: 480px;
+    }
+
+    .search {
+    width: 500px;
+    }
+
+    .form-search-container {
+    margin: 0 auto;
+    width: 475px;
+    padding-top: 40px;
+    }
+
+    ul li {
+    font-size:15px;
+    font-family: Segoe UI;
+    padding-left: 10px;
+    }
+
+
+}
+
+/************
+11. 625px
+************/
+
+@media only screen and (max-width: 625px)
+{
+
+    .logo img {
+      width: 40px;
+    }
+
+    h1 {
+    font-size: 25px;
+    }
+
+    .user {
+    padding-top: 12px;
+    }
+
+}
+
+/************
+11. 575px
+************/
+
+@media only screen and (max-width: 575px)
+{
+
+      .logo img {
+      width: 30px;
+      padding-top: 20px;
+    }
+
+    h1 {
+    font-size: 20px;
+    padding-top: 10px;
+    }
+
+    nav{
+    float:left;
+    padding-left: 1px;
+    }
+
+
+
+}
+
+/************
+12. 480px
+************/
+
+@media only screen and (max-width: 550px)
+{
+
+      .user {
+     padding-right: 15px;
+     }
+
+
+
+
+}
+
+/************
+12. 480px
+************/
+
+@media only screen and (max-width: 480px)
+{
+
+}
+
+/************
+13. 479px
+************/
+
+@media only screen and (max-width: 479px)
+{
+	h2{font-size: 24px;}
+}
+
+/************
+14. 400px
+************/
+
+@media only screen and (max-width: 400px)
+{
+
+}
+
+
+/****************
+Height based adjustments
+*********************/
+
+@media only screen and (max-height: 950px)
+{
+    .body-container {
+    height: 790px;
+    }
+
+}
+
+/************
+Height 900px
+************/
+
+@media only screen and (max-height: 900px)
+{
+    .body-container {
+    height: 800px;
+    }
+
+}

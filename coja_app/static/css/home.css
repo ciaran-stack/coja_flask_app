@@ -1,0 +1,152 @@
+.body-container {
+
+    background-color: #30C9E9;
+    background-size: 50% 25%;
+    margin: -10px;
+    padding: -0px;
+    height: 582px;
+    border-style: solid;
+    border-width: thin;
+    border-top-color: #707070;
+    border-bottom-style: none;
+
+
+}
+
+.body-container p{
+
+    text-align: center;
+    color: white;
+    padding-bottom: 10px;
+    font-size: 25px;
+
+
+}
+
+
+.title {
+
+    position: relative;
+    top: 1%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 60px;
+
+
+}
+
+.title p {
+
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 15px;
+    font-size: 45px;
+    font-family: Segoe UI;
+    color: #F5F5F5;
+}
+
+.subtitle {
+
+    position: relative;
+    top: 16%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 60px;
+
+
+}
+
+.subtitle p{
+    text-align: center;
+    padding-top: 1px;
+    font-size: 20px;
+    font-family: Segoe UI;
+    color: #F5F5F5;
+
+
+}
+
+.footer {
+
+
+    height: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-family: Segoe UI;
+
+}
+
+
+.search {
+
+    position: relative;
+    top: 27%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    background-color: #F5F5F5;
+     width: 650px;
+     height: 150px;
+     border-radius: 10px;
+     box-shadow: 10px 10px 15px #696969
+
+}
+
+.form-search-container {
+
+    margin: 0 auto;
+    width: 550px;
+    padding-top: 40px;
+
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+form.form-search input[type=text] {
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #FF4431 ;
+  float: left;
+  width: 70%;
+  background: #f1f1f1;
+  font-family: Segoe UI;
+  border-radius: 7px 0px 0px 7px;
+
+  }
+
+
+form.form-search button {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  background: #FF4431;
+  color: white;
+  font-size: 15px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+  font-family: Segoe UI;
+  border-radius: 0px 7px 7px 0px;
+}
+
+form.form-search button:hover {
+  background: ##FF4431;
+}
+
+form.form-search::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+

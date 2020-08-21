@@ -1,3 +1,4 @@
+<!-- original code for main-->
 <!doctype html>
 <head>
 <meta charset="utf-8">
@@ -7,7 +8,6 @@
 <meta name="description" content="">
 <meta name="author" content="">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="/static/css/home.css">
 <!-- /meta -->
 
 <!-- styles -->
@@ -98,3 +98,98 @@
 
 </body>
 </html>
+
+
+
+
+
+
+<!-- new body html-->
+
+{% extends 'layouts/main.html' %}
+{% block content %}
+
+<!-- body container -->
+
+
+
+
+<!-- new main html-->
+<!doctype html>
+<head>
+<meta charset="utf-8">
+<title>{% block title %}{% endblock %}</title>
+
+<!-- meta -->
+  <link rel="stylesheet" type="text/css" href="/static/css/navbar.css">
+  <link rel="stylesheet" type="text/css" href="/static/css/nav&main.responsive.css">
+  <link rel="stylesheet" type="text/css" href="/static/css/home.css">
+
+
+</head>
+<body>
+
+<div class="container">
+
+
+<!-- logo -->
+<div class="logo">
+  <img src="logo.png" alt="" width="50"/>
+     <h1>Coja.io</h1>
+  </div>
+
+<!-- Nav -->
+<nav>
+  <ul>
+  <li>Home</li>
+  <li>Services</li>
+  <a href="/about"><li>About</li></a>
+  </ul>
+</nav>
+
+<!-- User -->
+<div class="user">
+    <div>
+        <button class="navbar-btn" type="submit"><i class=""></i>Hi Ciaran!</button>
+    </div>
+</div>
+
+<!-- end of nav container -->
+</div>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+<!-- old homepage html -->
+
+{% extends 'layouts/main.html' %}
+{% block title %} Coja {% endblock %}
+{% block content %}
+
+<div class="row">
+    <div class="col-sm-6">
+        <h1>Coja.io 🗿</h1>
+        <p class="lead"> Find publicly traded company 10-k's.</p>
+        <p class="lead"> Easily.</p>
+        <form method="POST" action="/search_ticker" >
+            <input name="search_ticker" placeholder="search by ticker">
+            <input placeholder="Search by ticker" id="ticker" type="submit">
+        </form>
+        <div></div>
+        <h5>or</h5>
+        <div></div>
+        <form method="POST" action="/search_company_name" >
+            <input name="search_name" placeholder="search by name">
+            <input placeholder="Search by name" id="name" type="submit">
+        </form>
+    </div>
+</div>
+{% endblock %}
