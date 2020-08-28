@@ -23,7 +23,7 @@ nav{
     float:left;
     padding-left: 10px;
     color: #FF4431;
-    font-family: Segoe UI;
+    font-family: Varta;
 
 }
 
@@ -45,7 +45,7 @@ nav{
     border-radius: 10px;
     color: white;
     text-align: center;
-    font-family: Segoe UI;
+    font-family: Varta;
     padding-top: 2px;
     font-size: 20px;
     border: none;
@@ -58,7 +58,7 @@ ul li{
   display: inline-block;
   padding:15px;
   font-size:20px;
-  font-family: Segoe UI;
+  font-family: Varta;
   padding-left: 15px;
   color: #3F3F3F;
 }

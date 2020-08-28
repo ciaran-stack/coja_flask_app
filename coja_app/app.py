@@ -8,8 +8,8 @@ from forms import TickerSearchForm
 app = Flask(__name__)
 
 # configure DB by putting user name and local DB
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://joeyp@localhost:5432/coja'
-#app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://ciaranmahon@localhost:5432/coja'
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://joeyp@localhost:5432/coja'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://ciaranmahon@localhost:5432/coja'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 

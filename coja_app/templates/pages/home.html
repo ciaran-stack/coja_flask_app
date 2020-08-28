@@ -2,24 +2,25 @@
 {% block title %} Coja {% endblock %}
 {% block content %}
 
-<div class="row">
-    <div class="col-sm-6">
-        <h1>Coja.io 🗿</h1>
-        <p class="lead"> Find publicly traded company 10-k's.</p>
-        <p class="lead"> Easily.</p>
-        <form method="POST" action="/search_ticker" >
-            <input name="search_ticker" placeholder="search by ticker">
-            <input placeholder="Search by ticker" id="ticker" type="submit">
-        </form>
-        <div></div>
-        <h5>or</h5>
-        <div></div>
-        <form method="POST" action="/search_company_name" >
-            <input name="search_name" placeholder="search by name">
-            <input placeholder="Search by name" id="name" type="submit">
-        </form>
+<div class="body-container">
+    <div class="title">
+        <p>Let us find the data.</p>
+     </div>
+    <div class="subtitle">
+        <p>Coja allows you to quickly identify important data points of publicly traded firms. </p>
+    </div>
+    <div class="search">
+        <div class="form-search-container">
+            <form class="form-search" method="POST" action="/search_company_name">
+                <input type="text" name="search_name" placeholder="search by name" >
+                <button id="name" type="submit"><i class=""></i>Find Company</button>
+            </form>
+         </div>
     </div>
 </div>
 {% endblock %}
 
+<div class="footer">
+        <p>Coja &copy; All Rights Reserved.</p>
+    </div>
 
