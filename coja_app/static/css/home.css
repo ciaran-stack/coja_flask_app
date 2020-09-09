@@ -43,7 +43,7 @@
     padding-top: 100px;
     padding-bottom: 15px;
     font-size: 45px;
-    font-family: Varta;
+    font-family: Segoe UI;
     color: #F5F5F5;
 }
 
@@ -64,7 +64,7 @@
     text-align: center;
     padding-top: 1px;
     font-size: 20px;
-    font-family: Varta;
+    font-family: Segoe UI;
     color: #F5F5F5;
 
 
@@ -76,7 +76,7 @@
     height: 20px;
     text-align: center;
     font-size: 18px;
-    font-family: Varta;
+    font-family: Segoe UI;
 
 }
 
@@ -117,7 +117,7 @@ form.form-search input[type=text] {
   float: left;
   width: 70%;
   background: #f1f1f1;
-  font-family: Varta;
+  font-family: Segoe UI;
   border-radius: 7px 0px 0px 7px;
 
   }
@@ -133,7 +133,7 @@ form.form-search button {
   border: 1px solid grey;
   border-left: none;
   cursor: pointer;
-  font-family: Varta;
+  font-family: Segoe UI;
   border-radius: 0px 7px 7px 0px;
 }
 

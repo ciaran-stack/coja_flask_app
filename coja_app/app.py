@@ -33,6 +33,26 @@ CLIENT_ID = json.loads(
 # ----------------------------------------------------------------------------#
 # Models.
 # ----------------------------------------------------------------------------#
+class User(db.Model):
+    """Represents a user from the internet accessing the application with auth0 permissions"""
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String)
+    email = db.Column(db.String)
+    picture = db.Column(db.String)
+
+    def __repr__(self):
+        """Represeents a user as a string"""
+        return f'id: {self.id} name: {self.name} email: {self.email} picture: {self.picture}'
+
+    def details(self):
+        return {
+            'id': {self.id},
+            'name': {self.name},
+            'email': {self.email},
+            'picture': {self.picture},
+        }
+
+
 class Company(db.Model):
     """Represents a public company with a ticker and CIK from the SEC.gov site"""
     id = db.Column(db.Integer, primary_key=True)
